@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TextInput } from 'react-native'
 import styled from 'styled-components'
 import CustomText from '../custom-components/CustomText'
 
@@ -21,8 +21,11 @@ const LoginScreen = () => {
     return (
         <Root>
             <LoginPanel>
-            <CustomText color="white" fontSize="md">BEJELENTKEZÉS</CustomText>
-
+                <CustomText color="white" fontSize="md">BEJELENTKEZÉS</CustomText>
+                <CustomText>Email cím</CustomText>
+                <TextInput/>
+                <CustomText>Jelszó</CustomText>
+                <TextInput  secureTextEntry={true}/>
             </LoginPanel>
         </Root>
     )
