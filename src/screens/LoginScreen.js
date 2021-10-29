@@ -25,7 +25,7 @@ const LoginScreen = () => {
                 <CustomText>Email cím</CustomText>
                 <TextInput/>
                 <CustomText>Jelszó</CustomText>
-                <TextInput  secureTextEntry={true}/>
+                <TextInput secureTextEntry={true}/>
             </LoginPanel>
         </Root>
     )
