@@ -13,9 +13,12 @@ export const fontSizes = {
 
 
 const Texty = styled(Text)`
-    color: ${props => props.color || 'white' };
+    color: ${props => props.theme.colors[props.color]|| props.color || 'balck'};
     font-size: ${props => fontSizes[props.fontSize] || props.fontSize || fontSizes.sm}px;
-    font-weight: ${props => props.fontWeight || 'normal' };
+    font-weight: ${props => props.bold ? 'bold' :  props.fontWeight || 'normal' };
+    padding: ${props => props.padding || '0px'};
+    margin: ${props => props.margin || '8px 0px'};
+
 `
 
 
