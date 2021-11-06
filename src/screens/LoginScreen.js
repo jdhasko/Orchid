@@ -10,17 +10,19 @@ const Root = styled(View)`
     width: 100%;
     height:100%;
     background-color: ${props => props.theme.colors.backgroundGray};
+
 `
 const Background = styled(ImageBackground)`
     width:100%;
     height:100%;
+    justify-content: flex-end;
+    flex-direction: column;
 `
 
 const LoginPanel = styled(View)`
-    position:absolute;
-    bottom:5%;
-    left:5%;
-    width: 90%;
+    width:300px;
+    margin:auto;
+    text-align:center;
     height: auto;
     border-radius: 16px;
     align-items:center;

@@ -15,7 +15,7 @@ export default function App() {
 
     alert( screenWidth + " - " + screenHeight )
     if(screenWidth >= 600 && screenHeight >= 900 ){
-       ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_LEFT);
+       ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_RIGHT);
        const screenHeight = Dimensions.get('window').height;
        const screenWidth = Dimensions.get('window').width;
     }
